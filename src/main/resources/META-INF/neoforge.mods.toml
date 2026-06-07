@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+#issueTrackerURL = ""
+license = "MIT"
+
+[[mods]]
+modId = "chatlined"
+version = "${version}"
+displayName = "ChatLined"
+authors = "Kall"
+description='''
+Splits chat messages containing "\n" into multiple lines automatically, allowing servers and mods to display multi-line chat messages correctly in the Minecraft chat window.
+'''
+logoFile = "logo.png"
+
+[[dependencies.chatlined]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.chatlined]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[mixins]]
+config = "chatlined.mixins.json"

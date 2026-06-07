@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "me.kall.chatlined.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "minVersion": "0.8",
+  "client": [
+    "ChatComponentMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
